@@ -38,7 +38,7 @@ See the [AutoDock Vina tutorial](http://vina.scripps.edu/tutorial.html) for how 
 
 The first batch of compounds that were docked are analogues of Quercetin. Quercetin is plant pigment (flavonoid) that is found in many plants and foods, such as red wine and onions. It has shown to have antiviral properties, specifically by inhibiting viral proteases e.g. [PMID:30064445](https://pubmed.ncbi.nlm.nih.gov/30064445/) including that of Ebola [PMID:27297486](https://pubmed.ncbi.nlm.nih.gov/27297486/). There is also a [clinical trial planned](https://www.mcgilltribune.com/sci-tech/montreal-researchers-propose-a-treatment-for-covid-19-170320/) to assess efficiacy of quercetin at inhibiting COVID19.
 
-There are hundreds of compounds that are analogues of quercetin. Using PubChem, I obtained the smiles for any compounds matching "quercetin" in the search result. This resulted in 693 compounds, which can be found in [`quercetin/PubChem_compound_text_quercetin.csv`](quercetin/PubChem_compound_text_quercetin.csv). Smiles for each compound was converted to pdbqt using open babel. Each compound was docked against the COVID19 main protease using an exhaustiveness of 10. A total of 667 compounds were successfully docked. The docked pdbqt files can be found in [`quercetin/docked`](`quercetin/docked`).
+There are hundreds of compounds that are analogues of quercetin. Using PubChem, I obtained the smiles for any compounds matching "quercetin" in the search result. This resulted in 693 compounds, which can be found in [`quercetin/PubChem_compound_text_quercetin.csv`](quercetin/PubChem_compound_text_quercetin.csv). Smiles for each compound was converted to pdbqt using open babel. Each compound was docked against the COVID19 main protease using an exhaustiveness of 10. A total of 667 compounds were successfully docked. The docked pdbqt files can be found in [`quercetin/docked`](quercetin/docked).
 
 Vina uses affinity (in kcal/mol) to assess how well the compound is expected to bind. This table shows the top compounds identified, sorted by affinity. The full list of pdbqt files for these compounds can be found in [`quercetin/quercetin_docking_affinity_results.csv`](quercetin/quercetin_docking_affinity_results.csv).
 
@@ -100,7 +100,7 @@ Has been shown to have an inhibitory effect on the HIV-1 protease [PMID:16926516
 ## Docking compounds in DrugBank
 To expand this, I smilarly next docked over 5600 compounds found in DrugBank. The smiles for each of those compounds were pulled from [this repository](https://github.com/choderalab/nano-drugbank/blob/master/df_drugbank_smiles.csv), converted to pdbqt files, and used for the vina docking in a similar manner to the quercetin analogues.
 
-This resulted in dozens of compounds with strong binding affinities, many stronger than the strongest quercetin analogue. This table shows the top compounds identified. The full list of docked pdbqt files for these compounds can be found in [`nano_drugbank/docked`](`nano_drugbank/docked`).
+This resulted in dozens of compounds with strong binding affinities, many stronger than the strongest quercetin analogue. This table shows the top compounds identified. The full list of docked pdbqt files for these compounds can be found in [`nano_drugbank/docked`](nano_drugbank/docked).
 
 The file containing affinities of the docked DrugBank compounds can be found in [`nano_drugbank/drugbank_docking_affinity_results.csv`](nano_drugbank/drugbank_docking_affinity_results.csv).
 
