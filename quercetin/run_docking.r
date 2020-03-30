@@ -1,7 +1,8 @@
-setwd('~/docking/covid19/')
-source('run_dock.r')
+setwd('~/docking/covid19-docking/')
+
 require(data.table)
 require(parallel)
+source('scripts/dock_helpers.r')
 df = fread('quercetin/smiles.txt')
 
 mclapply(1:nrow(df), function(i){
@@ -19,9 +20,3 @@ mclapply(1:nrow(df), function(i){
                dock_dir = 'quercetin/docked', log_dir = 'quercetin/logs' )
   
 }, mc.cores = 40)
-
-# for(i in 1:nrow(df)){
-#   
-# }
-
-

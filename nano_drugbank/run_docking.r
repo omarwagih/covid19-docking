@@ -1,7 +1,7 @@
-setwd('~/docking/covid19/')
+setwd('~/docking/covid19-docking/')
 require(data.table)
 require(parallel)
-source('run_dock.r')
+source('scripts/dock_helpers.r')
 df = fread('nano_drugbank/df_drugbank_smiles.csv')
 df = df[,c('drugbank_id', 'name', 'smiles')]
 
@@ -20,7 +20,3 @@ X = mclapply(1:nrow(df), function(i){
   run_docking( path, exhaustiveness = 10, cores = 1, active_site = T, 
                dock_dir = 'nano_drugbank/docked', log_dir = 'nano_drugbank/logs' )
 }, mc.cores = 40)
-
-# for(i in 3:3){
-#   
-# }
