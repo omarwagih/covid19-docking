@@ -1,15 +1,4 @@
 
-# set_view (\
-#           0.308895558,    0.255889058,   -0.916024864,\
-#           -0.731366515,    0.679613471,   -0.056781814,\
-#           0.608011544,    0.687492132,    0.397083193,\
-#           -0.000158191,   -0.000019370,  -65.590782166,\
-#           7.304903984,   -0.816319287,   27.276485443,\
-#           -53943.367187500, 54074.582031250,  -20.000000000 )
-# 
-# ray 1600,1200
-# png testzoom.png, 1600, 1200
-
 setwd('~/Development/docking/covid19-docking/')
 require(data.table)
 
@@ -80,11 +69,17 @@ if(F){
 
 
 
-# pymol drugbank
-db = head(fread('nano_drugbank/drugbank_docking_affinity_results.csv'), 20)
-picked_db = sprintf('nano_drugbank/docked/docked_%s.pdbqt', db$`DrugBank ID`)
-picked_db_out = sprintf('nano_drugbank/images/%s.png', basename(picked_db))
+if(F){
+  # pymol drugbank
+  db = head(fread('nano_drugbank/drugbank_docking_affinity_results.csv'), 20)
+  picked_db = sprintf('nano_drugbank/docked/docked_%s.pdbqt', db$`DrugBank ID`)
+  picked_db_out = sprintf('nano_drugbank/images/%s.png', basename(picked_db))
+  
+  for(i in 1:length(picked_db))
+    run_pymol(picked_db[i], picked_db_out[i])
+}
 
-for(i in 1:length(picked_db))
-  run_pymol(picked_db[i], picked_db_out[i])
-
+if(F){
+  run_pymol('nano_drugbank/docked/docked_DB08930.pdbqt', 
+            'nano_drugbank/images/docked_DB08930.pdbqt.png')
+}

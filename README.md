@@ -158,3 +158,16 @@ Quercetin is shown in the dotted red line:
 ![](nano_drugbank/images/docked_DB09280.pdbqt.png)
 
 
+#### Dolutegravir, DB08930 (-8.9 kcal/mol)
+- Dolutegravir is an existing FDA-approved HIV-1 antiviral agent. It inhibits HIV integrase by binding to the active site and blocking the strand transfer step of retroviral DNA integration in the host cell.
+- Also predicted as an effective treatment for COVID19 in [this paper](https://www.genengnews.com/artificial-intelligence/ai-predicts-coronavirus-vulnerable-to-hivs-atazanavir/).
+
+![](nano_drugbank/images/docked_DB08930.pdbqt.png)
+
+## TODO
+
+- Fix bug where babel does not correctly convert smiles into the correct pdbqt file, resulting in inflated affinity values
+- Update remaining DrugBank molecules when they are finished running
+- Re-run top compounds at higher exhaustiveness
+
+
