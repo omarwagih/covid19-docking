@@ -1,5 +1,7 @@
 # Docking of compounds against the SARS-CoV-2 protease structure
 
+
+<img src="animated.gif" width="400px">
 ## Getting started
 
 ### Requirements 
