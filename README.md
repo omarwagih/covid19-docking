@@ -40,6 +40,12 @@ There are hundreds of compounds that are analogues of quercetin. Using PubChem, 
 Vina uses affinity (in kcal/mol) to assess how well the compound is expected to bind. This table shows the top compounds identified, sorted by affinity. The full list of pdbqt files for these compounds can be found in [`quercetin/quercetin_docking_affinity_results.csv`](`quercetin/quercetin_docking_affinity_results.csv`).
 
 
+### Distribution of quercetin analogue affinity to the COVID19 protease
+
+Quercetin is shown in the dotted red line:
+
+<img src="quercetin/images/hist_quercetin.png" width="600px">
+![](quercetin/images/hist_quercetin.png)
 
 ### Table of top quercetin analogues ordered by affinity to the COVID19 protease
 
@@ -71,23 +77,17 @@ Vina uses affinity (in kcal/mol) to assess how well the compound is expected to 
 ### Visualizing top quercetin analogues in complex with the COVID19 protease
 
 - Camellianoside, PubChem:11988368 (-8.6 kcal/mol)
-<img src="quercetin/images/docked_11988368.pdbqt.png" width="600px">
+![](quercetin/images/docked_11988368.pdbqt.png)
 
 - Quercetin 3-O-alpha-D-arabinopyranoside, PubChem:44259270 (-8.6 kcal/mol)
-<img src="quercetin/images/docked_44259270.pdbqt.png" width="600px">
+![](quercetin/images/docked_44259270.pdbqt.png)
 
 - Quercetin 5-glucuronide, PubChem:44259271 (-8.4 kcal/mol)
-<img src="quercetin/images/docked_44259271.pdbqt.png" width="700px">
+![](quercetin/images/docked_44259271.pdbqt.png)
 
 - Alcesefoliside, PubChem:11828754 (-8.2 kcal/mol)
-<img src="quercetin/images/docked_11828754.pdbqt.png" width="700px">
+![](quercetin/images/docked_11828754.pdbqt.png)
 
-
-### Distribution of quercetin analogue affinity to the COVID19 protease
-
-Quercetin is shown in the dotted red line:
-
-<img src="quercetin/images/hist_quercetin.png" width="600px">
 
 
 ## Docking compounds in DrugBank
