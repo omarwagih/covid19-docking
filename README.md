@@ -31,9 +31,8 @@ size_z = 70
 
 See the [AutoDock Vina tutorial](http://vina.scripps.edu/tutorial.html) for how to do this. 
 
-## Docking drug compounds
+## Docking Quercetin analogues
 
-### Quercetin
 The first batch of compounds that were docked are analogues of quercetin. Quercetin is plant pigment (flavonoid) that is found in many plants and foods, such as red wine and onions. It has shown to have antiviral properties, specifically by inhibiting viral proteases e.g. [PMID:30064445](https://pubmed.ncbi.nlm.nih.gov/30064445/) including that of Ebola [PMID:27297486](https://pubmed.ncbi.nlm.nih.gov/27297486/). There is also a [clinical trial planned](https://www.mcgilltribune.com/sci-tech/montreal-researchers-propose-a-treatment-for-covid-19-170320/) to assess efficiacy of quercetin at inhibiting COVID19.
 
 There are hundreds of compounds that are analogues of quercetin. Using PubChem, I obtained the smiles for any compounds matching "quercetin" in the search result. This resulted in 693 compounds, which can be found in [`quercetin/PubChem_compound_text_quercetin.csv`](quercetin/PubChem_compound_text_quercetin.csv). Smiles for each compound was converted to pdbqt using open babel. Each compound was docked against the COVID19 main protease using an exhaustiveness of 10. A total of 667 compounds were successfully docked.
@@ -42,7 +41,7 @@ Vina uses affinity (in kcal/mol) to assess how well the compound is expected to 
 
 
 
-#### Table of top quercetin analogues ordered by affinity to the COVID19 protease
+### Table of top quercetin analogues ordered by affinity to the COVID19 protease
 
 |Compound                                                                         |PubChem ID                                                       | Affinity|
 |:--------------------------------------------------------------------------------|:----------------------------------------------------------------|--------:|
@@ -69,7 +68,7 @@ Vina uses affinity (in kcal/mol) to assess how well the compound is expected to 
 
 
 
-#### Visualizing top quercetin analogues in complex with the COVID19 protease
+### Visualizing top quercetin analogues in complex with the COVID19 protease
 
 - Camellianoside, PubChem:11988368 (-8.6 kcal/mol)
 <img src="quercetin/images/docked_11988368.pdbqt.png" width="600px">
@@ -84,14 +83,14 @@ Vina uses affinity (in kcal/mol) to assess how well the compound is expected to 
 <img src="quercetin/images/docked_11828754.pdbqt.png" width="700px">
 
 
-#### Distribution of quercetin analogue affinity to the COVID19 protease
+### Distribution of quercetin analogue affinity to the COVID19 protease
 
 Quercetin is shown in the dotted red line:
 
 <img src="quercetin/images/hist_quercetin.png" width="600px">
 
 
-### Any compound
+## Docking compounds in DrugBank
 To expand this, I smilarly next docked over 5600 compounds found in DrugBank. The smiles for each of those compounds were pulled from [this repository](https://github.com/choderalab/nano-drugbank/blob/master/df_drugbank_smiles.csv), converted to pdbqt files, and used for the vina docking in a similar manner to the quercetin analogues.
 
 This resulted in dozens of compounds with strong binding affinities, many stronger than the strongest quercetin analogue. This table shows the top compounds identified. The full list of pdbqt files for these compounds can be found in .
