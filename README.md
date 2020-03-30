@@ -2,6 +2,8 @@
 
 # Docking of compounds against the SARS-CoV-2 protease structure
 
+## Overview
+Initial exploratory analysis of identifying existing compounds that would serve as potential inhibitors of the SARS-CoV-2 protease. Several thousand compounds are docked on top the active site of the protease and the affinity is assessed. The compounds used range from ~700 Quercetin analogues (a known antiviral agent), ~5600 compounds in DrugBank, and ~500 antiviral compounds as determined by the ATC classification. 
 
 ## Getting started
 
@@ -23,13 +25,13 @@
 - The grid box must then be defined in AutoDockTools. This tells the docking software where what regions of the protein to attempt docking to. The grid box I have defined is based on the protease active site and has the following parameters: 
 
 ```
-center_x = 11.748
-center_y = 0.681
-center_z = 4.364
+center_x 10.568
+center_y -1.892
+center_z 21.485
 
-size_x = 40
-size_y = 76
-size_z = 70
+size_x 20
+size_y 18
+size_z 18 
 ```
 
 See the [AutoDock Vina tutorial](http://vina.scripps.edu/tutorial.html) for how to do this. 
