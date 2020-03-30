@@ -1,0 +1,49 @@
+REMARK  Name = 
+REMARK  10 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  N_2
+REMARK    2  A    between atoms: N_2  and  C_3
+REMARK    3  A    between atoms: N_2  and  C_4
+REMARK    4  A    between atoms: C_4  and  C_5
+REMARK    5  A    between atoms: C_5  and  C_6
+REMARK    6  A    between atoms: C_6  and  C_7
+REMARK    7  A    between atoms: C_7  and  C_8
+REMARK    8  A    between atoms: C_8  and  N_10
+REMARK    9  A    between atoms: C_8  and  C_11
+REMARK   10  A    between atoms: C_11  and  O_12
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK     1       7.039   4.303   0.654  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   UNK     1       6.689   4.826   2.009  0.00  0.00    -0.318 NA
+ATOM      3  H   UNK     1       6.965   5.815   2.038  0.00  0.00    +0.119 HD
+ATOM      4  H   UNK     1       5.669   4.860   2.080  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   UNK     1       8.571   4.243   0.553  0.00  0.00    +0.322 C 
+ATOM      6  O   UNK     1       9.210   4.245  -0.487  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  O   UNK     1       9.138   4.149   1.785  0.00  0.00    -0.480 OA
+ATOM      8  H   UNK     1       8.389   4.187   2.431  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  C   UNK     1       6.475   2.894   0.435  0.00  0.00    +0.030 C 
+BRANCH   9  10
+ATOM     10  C   UNK     1       4.946   2.855   0.381  0.00  0.00    +0.003 C 
+BRANCH  10  11
+ATOM     11  C   UNK     1       4.432   1.430   0.148  0.00  0.00    +0.015 C 
+BRANCH  11  12
+ATOM     12  C   UNK     1       2.902   1.365   0.020  0.00  0.00    +0.084 C 
+BRANCH  12  14
+ATOM     13  C   UNK     1       2.793   1.752  -2.384  0.00  0.00    +0.104 C 
+ATOM     14  N   UNK     1       2.347   2.197  -1.063  0.00  0.00    -0.308 NA
+ATOM     15  C   UNK     1       0.883   2.186  -1.005  0.00  0.00    +0.104 C 
+ENDBRANCH  12  14
+ENDBRANCH  11  12
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 8

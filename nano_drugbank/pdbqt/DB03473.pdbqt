@@ -1,0 +1,42 @@
+REMARK  Name = 
+REMARK  7 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  N_2
+REMARK    2  A    between atoms: C_3  and  C_5
+REMARK    3  A    between atoms: C_5  and  C_6
+REMARK    4  A    between atoms: C_6  and  C_7
+REMARK    5  A    between atoms: C_7  and  N_9
+REMARK    6  A    between atoms: C_7  and  C_10
+REMARK    7  A    between atoms: C_10  and  O_11
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK     1       6.902   2.061   1.864  0.00  0.00    +0.161 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   UNK     1       7.355   2.413   0.486  0.00  0.00    -0.318 NA
+ATOM      3  H   UNK     1       7.015   1.681  -0.147  0.00  0.00    +0.119 HD
+ATOM      4  H   UNK     1       6.833   3.248   0.193  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   UNK     1       7.479   3.090   2.848  0.00  0.00    +0.322 C 
+ATOM      6  O   UNK     1       7.072   3.294   3.979  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  O   UNK     1       8.552   3.731   2.308  0.00  0.00    -0.480 OA
+ATOM      8  H   UNK     1       8.641   3.381   1.387  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  C   UNK     1       7.326   0.642   2.254  0.00  0.00    +0.039 C 
+BRANCH   9  10
+ATOM     10  C   UNK     1       8.835   0.381   2.170  0.00  0.00    +0.098 C 
+BRANCH  10  14
+ATOM     11  C   UNK     1      11.057  -2.590   2.868  0.00  0.00    +0.128 C 
+ATOM     12  N   UNK     1      10.538  -1.298   2.504  0.00  0.00    -0.318 N 
+ATOM     13  H   UNK     1      11.184  -0.535   2.363  0.00  0.00    +0.148 HD
+ATOM     14  C   UNK     1       9.184  -1.049   2.543  0.00  0.00    +0.213 C 
+ATOM     15  O   UNK     1       8.346  -1.896   2.828  0.00  0.00    -0.276 OA
+ENDBRANCH  10  14
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 6

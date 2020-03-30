@@ -1,0 +1,54 @@
+REMARK  Name = 
+REMARK  6 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: CA_2  and  CB_3
+REMARK    2  A    between atoms: CB_3  and  CG_4
+REMARK    3  A    between atoms: CZ_7  and  OH_8
+REMARK    4  A    between atoms: CA_14  and  CB_16
+REMARK    5  A    between atoms: CB_16  and  CG_17
+REMARK    6  A    between atoms: CZ_20  and  OH_21
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  CA  TYR A   2       1.891  -0.118   0.080  0.00  0.00    +0.163 C 
+ATOM      2  C   TYR A   2       2.152   0.977  -0.971  0.00  0.00    +0.234 C 
+ATOM      3  O   TYR A   2       2.252   2.173  -0.714  0.00  0.00    -0.274 OA
+ATOM      4  N   TYR A   1       2.008   0.559  -2.274  0.00  0.00    -0.302 N 
+ATOM      5  H   TYR A   1       2.115   1.316  -2.941  0.00  0.00    +0.150 HD
+ATOM      6  CA  TYR A   1       2.559  -0.733  -2.689  0.00  0.00    +0.163 C 
+ATOM      7  C   TYR A   1       2.188  -1.829  -1.686  0.00  0.00    +0.234 C 
+ATOM      8  O   TYR A   1       2.061  -3.011  -1.991  0.00  0.00    -0.274 OA
+ATOM      9  N   TYR A   2       2.290  -1.458  -0.365  0.00  0.00    -0.302 N 
+ATOM     10  H   TYR A   2       2.041  -2.220   0.256  0.00  0.00    +0.150 HD
+ENDROOT
+BRANCH   6  11
+ATOM     11  CB  TYR A   1       4.097  -0.706  -2.823  0.00  0.00    +0.067 C 
+BRANCH  11  12
+ATOM     12  CG  TYR A   1       4.550   0.345  -3.810  0.00  0.00    -0.045 A 
+ATOM     13  CD2 TYR A   1       4.600   0.059  -5.180  0.00  0.00    +0.007 A 
+ATOM     14  CE2 TYR A   1       4.864   1.075  -6.098  0.00  0.00    +0.045 A 
+ATOM     15  CZ  TYR A   1       5.067   2.375  -5.648  0.00  0.00    +0.117 A 
+ATOM     16  CE1 TYR A   1       5.068   2.669  -4.290  0.00  0.00    +0.045 A 
+ATOM     17  CD1 TYR A   1       4.820   1.651  -3.371  0.00  0.00    +0.007 A 
+BRANCH  15  18
+ATOM     18  OH  TYR A   1       5.243   3.351  -6.583  0.00  0.00    -0.507 OA
+ATOM     19  HH  TYR A   1       5.199   4.213  -6.136  0.00  0.00    +0.292 HD
+ENDBRANCH  15  18
+ENDBRANCH  11  12
+ENDBRANCH   6  11
+BRANCH   1  20
+ATOM     20  CB  TYR A   2       2.568   0.264   1.408  0.00  0.00    +0.067 C 
+BRANCH  20  21
+ATOM     21  CG  TYR A   2       2.159  -0.657   2.537  0.00  0.00    -0.045 A 
+ATOM     22  CD2 TYR A   2       0.986  -0.406   3.260  0.00  0.00    +0.007 A 
+ATOM     23  CE2 TYR A   2       0.557  -1.304   4.237  0.00  0.00    +0.045 A 
+ATOM     24  CZ  TYR A   2       1.293  -2.455   4.487  0.00  0.00    +0.117 A 
+ATOM     25  CE1 TYR A   2       2.473  -2.710   3.798  0.00  0.00    +0.045 A 
+ATOM     26  CD1 TYR A   2       2.910  -1.806   2.828  0.00  0.00    +0.007 A 
+BRANCH  24  27
+ATOM     27  OH  TYR A   2       0.815  -3.326   5.420  0.00  0.00    -0.507 OA
+ATOM     28  HH  TYR A   2       1.370  -4.123   5.412  0.00  0.00    +0.292 HD
+ENDBRANCH  24  27
+ENDBRANCH  20  21
+ENDBRANCH   1  20
+TORSDOF 6

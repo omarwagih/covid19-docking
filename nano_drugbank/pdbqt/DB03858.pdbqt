@@ -1,0 +1,44 @@
+REMARK  Name = 
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  C_4
+REMARK    3  A    between atoms: C_4  and  S_5
+REMARK    4  A    between atoms: S_5  and  C_6
+REMARK    5  A    between atoms: C_6  and  C_7
+REMARK    6  A    between atoms: C_7  and  N_9
+REMARK    7  A    between atoms: C_7  and  C_10
+REMARK    8  A    between atoms: C_10  and  O_11
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNK     1       7.494  -0.996  -2.003  0.00  0.00    +0.171 C 
+ENDROOT
+BRANCH   1   2
+ATOM      2  N   UNK     1       7.786  -1.915  -0.853  0.00  0.00    -0.318 NA
+ATOM      3  H   UNK     1       7.454  -1.434  -0.006  0.00  0.00    +0.119 HD
+ATOM      4  H   UNK     1       7.155  -2.720  -0.931  0.00  0.00    +0.119 HD
+ENDBRANCH   1   2
+BRANCH   1   5
+ATOM      5  C   UNK     1       8.376  -1.402  -3.189  0.00  0.00    +0.323 C 
+ATOM      6  O   UNK     1       8.341  -0.886  -4.295  0.00  0.00    -0.249 OA
+BRANCH   5   7
+ATOM      7  O   UNK     1       9.228  -2.407  -2.860  0.00  0.00    -0.480 OA
+ATOM      8  H   UNK     1       9.073  -2.590  -1.898  0.00  0.00    +0.295 HD
+ENDBRANCH   5   7
+ENDBRANCH   1   5
+BRANCH   1   9
+ATOM      9  C   UNK     1       7.762   0.481  -1.676  0.00  0.00    +0.099 C 
+BRANCH   9  10
+ATOM     10  S   UNK     1       6.681   1.049  -0.309  0.00  0.00    -0.151 S 
+BRANCH  10  11
+ATOM     11  C   UNK     1       7.253   2.771  -0.200  0.00  0.00    +0.143 C 
+BRANCH  11  13
+ATOM     12  C   UNK     1       5.196   4.138   0.547  0.00  0.00    +0.087 C 
+ATOM     13  C   UNK     1       6.508   3.489   0.907  0.00  0.00    +0.140 C 
+ATOM     14  O   UNK     1       6.951   3.545   2.056  0.00  0.00    -0.297 OA
+ENDBRANCH  11  13
+ENDBRANCH  10  11
+ENDBRANCH   9  10
+ENDBRANCH   1   9
+TORSDOF 7

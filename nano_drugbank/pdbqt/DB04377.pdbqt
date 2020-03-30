@@ -1,0 +1,44 @@
+REMARK  Name = 
+REMARK  8 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C_1  and  C_2
+REMARK    2  A    between atoms: C_2  and  O_3
+REMARK    3  A    between atoms: C_2  and  C_4
+REMARK    4  A    between atoms: C_2  and  C_8
+REMARK    5  A    between atoms: C_4  and  C_5
+REMARK    6  A    between atoms: C_5  and  O_6
+REMARK    7  A    between atoms: C_8  and  C_9
+REMARK    8  A    between atoms: C_9  and  O_10
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C   UNL     1       1.125  -0.125   0.067  0.00  0.00    +0.042 C 
+ATOM      2  C   UNL     1       2.648   0.067   0.006  0.00  0.00    +0.083 C 
+ENDROOT
+BRANCH   2   3
+ATOM      3  O   UNL     1       3.196  -0.861  -0.960  0.00  0.00    -0.388 OA
+ATOM      4  H   UNL     1       2.575  -0.889  -1.721  0.00  0.00    +0.210 HD
+ENDBRANCH   2   3
+BRANCH   2   5
+ATOM      5  C   UNL     1       3.303  -0.206   1.370  0.00  0.00    +0.155 C 
+BRANCH   5   6
+ATOM      6  C   UNL     1       2.957  -1.565   1.934  0.00  0.00    +0.307 C 
+ATOM      7  O   UNL     1       2.468  -1.736   3.040  0.00  0.00    -0.251 OA
+BRANCH   6   8
+ATOM      8  O   UNL     1       3.268  -2.588   1.107  0.00  0.00    -0.481 OA
+ATOM      9  H   UNL     1       3.599  -2.275   0.236  0.00  0.00    +0.295 HD
+ENDBRANCH   6   8
+ENDBRANCH   5   6
+ENDBRANCH   2   5
+BRANCH   2  10
+ATOM     10  C   UNL     1       2.952   1.490  -0.495  0.00  0.00    +0.155 C 
+BRANCH  10  11
+ATOM     11  C   UNL     1       4.420   1.826  -0.637  0.00  0.00    +0.307 C 
+ATOM     12  O   UNL     1       4.876   2.931  -0.391  0.00  0.00    -0.251 OA
+BRANCH  11  13
+ATOM     13  O   UNL     1       5.178   0.831  -1.142  0.00  0.00    -0.481 OA
+ATOM     14  H   UNL     1       4.675   0.002  -1.305  0.00  0.00    +0.295 HD
+ENDBRANCH  11  13
+ENDBRANCH  10  11
+ENDBRANCH   2  10
+TORSDOF 7

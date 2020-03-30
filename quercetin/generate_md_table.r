@@ -41,4 +41,4 @@ names(tab) = c('Compound', 'PubChem ID', 'Affinity')
 
 ggsave('images/hist_quercetin.png', p)
 
-writeLines(knitr::kable(head(tab, 20)), 'images/top10.md')
+writeLines(knitr::kable(head(tab, 20)), 'images/top20.md')

@@ -68,11 +68,23 @@ png %s, 1600, 1200
 }
 
 
-# Plot
-q = head(fread('quercetin/quercetin_docking_affinity_results.csv'), 20)
-picked_quercetin = sprintf('quercetin/docked/docked_%s.pdbqt', q$`PubChem ID`)
-picked_quercetin_out = sprintf('quercetin/images/%s.png', basename(picked_quercetin))
+# pymol quercetin
+if(F){
+  q = head(fread('quercetin/quercetin_docking_affinity_results.csv'), 20)
+  picked_quercetin = sprintf('quercetin/docked/docked_%s.pdbqt', q$`PubChem ID`)
+  picked_quercetin_out = sprintf('quercetin/images/%s.png', basename(picked_quercetin))
+  
+  for(i in 1:length(picked_quercetin))
+    run_pymol(picked_quercetin[i], picked_quercetin_out[i])
+}
 
-for(i in 1:length(picked_quercetin))
-  run_pymol(picked_quercetin[i], picked_quercetin_out[i])
+
+
+# pymol drugbank
+db = head(fread('nano_drugbank/drugbank_docking_affinity_results.csv'), 20)
+picked_db = sprintf('nano_drugbank/docked/docked_%s.pdbqt', db$`DrugBank ID`)
+picked_db_out = sprintf('nano_drugbank/images/%s.png', basename(picked_db))
+
+for(i in 1:length(picked_db))
+  run_pymol(picked_db[i], picked_db_out[i])
 
