@@ -30,7 +30,7 @@ tab = m[,c('cmpdname', 'cid', 'value')]
 # Write table
 tmp = tab
 names(tmp) = c('Compound', 'PubChem ID', 'Affinity')
-write.csv(tmp, 'antiviral_docking_affinity_results.csv', row.names=F)
+write.csv(tmp, 'antivirals_docking_affinity_results.csv', row.names=F)
 
 tab$cid = sprintf('[%s](https://pubchem.ncbi.nlm.nih.gov/compound/%s)', tab$cid, tab$cid)
 ind = nchar(tab$cmpdname) > 80
