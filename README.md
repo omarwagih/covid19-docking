@@ -3,7 +3,10 @@
 # Docking of compounds against the SARS-CoV-2 protease structure
 
 ## Overview
-Initial exploratory analysis of identifying existing compounds that would serve as potential inhibitors of the SARS-CoV-2 protease. Several thousand compounds are docked on top the active site of the protease and the affinity is assessed. The compounds used range from ~700 Quercetin analogues (a known antiviral agent), ~5600 compounds in DrugBank, and ~500 antiviral compounds as determined by the ATC classification. 
+Viral proteases are important enzymes that catalyze the cleavage of specific peptide bonds in viral polyprotein precursors or in cellular proteins. As such, inhibiting them is often a desired approach for inhibiting viral activity. The COVID19 protease structure was recently published ([PDB:6LU7](https://www.rcsb.org/pdb/explore/sequenceCluster.do?structureId=6LU7)). 
+
+This is an exploratory analysis aimed at identifying existing compounds that would serve as potential inhibitors of the SARS-CoV-2 protease. Several thousand compounds are docked on top the active site of the protease and the affinity is assessed. The compounds used range from ~700 Quercetin analogues (a known antiviral agent), ~5600 compounds in DrugBank, and ~500 antiviral compounds as determined by the ATC classification. 
+
 
 ## Getting started
 
@@ -35,6 +38,16 @@ size_z 18
 ```
 
 See the [AutoDock Vina tutorial](http://vina.scripps.edu/tutorial.html) for how to do this. 
+
+Docking is then carried out using the following command:
+
+```
+vina --receptor protein.pdbqt --ligand ligand.pdbqt --out docked.pdbqt --log log.txt \
+	--cpu 10 --seed 1 \
+	--center_x 10.568 --center_y -1.892 --center_z 21.485 \
+	--size_x 20 --size_y 18 --size_z 18 \
+	--exhaustiveness 10
+```
 
 ## Docking Quercetin analogues
 
