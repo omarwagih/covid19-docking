@@ -1,6 +1,6 @@
 <img src="animated.gif" width="400px" align="right">
 
-# Docking of compounds against the SARS-CoV-2 protease structure
+# Docking of compounds against the active site of the COVID19 protease
 
 ## Overview
 Viral proteases are important enzymes that catalyze the cleavage of specific peptide bonds in viral polyprotein precursors or in cellular proteins. As such, inhibiting them is often a desired approach for inhibiting viral activity. The COVID19 protease structure was recently published ([PDB:6LU7](https://www.rcsb.org/pdb/explore/sequenceCluster.do?structureId=6LU7)). 
