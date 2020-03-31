@@ -10,9 +10,27 @@ mclapply(1:nrow(df), function(i){
   smiles = df$V2[i]
   path = generate_ligand_pdbqt(smiles, name, out_dir = 'quercetin/pdbqt')
   
+  
+  if(is.na(path)){
+    unlink(sprintf('nano_drugbank/pdbqt/%s.pdbqt', name))
+    unlink(sprintf('nano_drugbank/docked/docked_%s.pdbqt', name))
+    unlink(sprintf('nano_drugbank/logs/%s.pdbqt.log', name))
+    return(NULL)
+  }
+  
+  return(NULL)
+  
+  
   fout = sprintf('quercetin/docked/docked_%s', basename(path))
   if(file.exists(fout)){
     message('-- skipping ', name)
+    return(NULL)
+  }
+  
+  
+  mwt = get_mwt(path)
+  if(!is.na(mwt) | mwt > 500){
+    message('-- too large')
     return(NULL)
   }
   

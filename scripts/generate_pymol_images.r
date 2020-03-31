@@ -79,7 +79,13 @@ if(F){
     run_pymol(picked_db[i], picked_db_out[i])
 }
 
-if(F){
-  run_pymol('nano_drugbank/docked/docked_DB08930.pdbqt', 
-            'nano_drugbank/images/docked_DB08930.pdbqt.png')
+if(T){
+  
+  q = head(fread('antivirals/antiviral_docking_affinity_results.csv'), 20)
+  picked_antiviral = sprintf('antivirals/docked/docked_%s.pdbqt', q$`PubChem ID`)
+  picked_antiviral_out = sprintf('antivirals/images/%s.png', basename(picked_antiviral))
+  
+  for(i in 1:length(picked_antiviral))
+    run_pymol(picked_antiviral[i], picked_antiviral_out[i])
+  
 }
