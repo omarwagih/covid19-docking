@@ -115,6 +115,7 @@ Quercetin is shown in the dotted red line:
 ### Table of top DrugBank compounds ordered by affinity to the COVID19 protease 
 
 - Table shows top 20 identified compounds ordered by affinity
+
 |Compound                                                                         |DrugBank ID                                      | Affinity|
 |:--------------------------------------------------------------------------------|:------------------------------------------------|--------:|
 |N-[2-Hydroxy-2-(8-Isopropyl-6,9-Dioxo-2-Oxa-7,10-Diaza-Bicyclo[11.2.2]Heptade... |[DB03768](https://www.drugbank.ca/drugs/DB03768) |    -11.5|
@@ -182,6 +183,7 @@ The file containing affinities of the docked DrugBank compounds can be found in 
 ![](nano_drugbank/images/hist_antivirals.png)
 
 ### Table of top DrugBank compounds ordered by affinity to the COVID19 protease 
+
 
 |Compound                                                                         |PubChem ID                                                       | Affinity|
 |:--------------------------------------------------------------------------------|:----------------------------------------------------------------|--------:|
